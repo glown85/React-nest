@@ -1,0 +1,21 @@
+.auth-form{
+    widows: 25rem;
+    max-width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+
+}
+
+
+.form-control{
+    margin-bottom: 1rem;
+}
+
+.error-message{
+    width: '100%';
+    min-width: 50%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    
+}

@@ -1,0 +1,22 @@
+# users
+type User{
+    id: String!
+    name: String!
+    email: String!
+    password: String!
+}
+type AuthData{
+    userId: String!
+    token: String!
+    tokenExpiration: Int!
+}
+type Query {
+    getUsers: [User]
+    getUserByid(id: String!): User
+    login(email:String!, password: String):AuthData!
+}
+type Mutation {
+    createUser(name: String!, email: String!, password: String!): String!
+    editUser(id:String!, name:String, email:String, password:String):String!
+    deleteUser(id: String!):String!
+}
